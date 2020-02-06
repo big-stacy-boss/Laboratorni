@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <title>DOM</title>
+    </head>
+    <body>
+        <header>YaremaObvodka</header>
+        <script>
+            var newh = document.createElement("h1");
+            newh.innerHTML = "<h1>DOM</h1>";
+         newh.id = "heading";
+         document.body.appendChild(newh);
+         console.log(document.getElementById("heading").style);
+         newh.style.color = "violet";
+         newh.style.textAlign = "center";
+         newh.style.borderStyle = "dotted";
+         newh.style.borderColor = "violet";
+             </script>
+    </body>
+</html>
