@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Button1-2</title>
+    </head>
+    <body>
+        <header>Yarema</header>
+        <script>
+        var buttons = document.createElement("button");
+        function fClick(){alert("hello");}
+        document.body.appendChild(buttons);
+        buttons.addEventListener("click",fClick);
+        var buttonsDead = document.createElement("button");
+        function fClickDead()
+            {
+            alert("Конечная");
+            buttonsDead.removeEventListener("click",fClickDead);
+            }
+        buttonsDead.addEventListener("click",fClickDead);
+        document.body.appendChild(buttonsDead);
+        
+        </script>
+    </body>
+</html>
